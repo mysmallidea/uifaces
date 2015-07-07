@@ -4,7 +4,7 @@ module UIFaces
   def self.face(index = nil)
     index ||= rand(0..UIFACES.size - 1)
     index = index % UIFACES.size
-    "http://uifaces.com/faces/_twitter/#{UIFACES[index]}_120.jpg"
+    "https://s3.amazonaws.com/uifaces/faces/twitter/#{UIFACES[index]}/128.jpg"
   end
 
   UIFACES = %w(
